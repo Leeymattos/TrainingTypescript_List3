@@ -1,8 +1,8 @@
-import { Animal } from "./animal";
-import { EmitSound } from "./emitSound";
-import { Run } from "./Run";
+import { Animal } from "./Animal";
+import { EmitSound } from "./IEmitSound";
+import { Run } from "./IRun";
 
-class Horse extends Animal implements EmitSound, Run {
+export class Horse extends Animal implements EmitSound, Run {
 
     constructor(name: string, idade: number) {
         super(name, idade);

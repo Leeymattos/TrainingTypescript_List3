@@ -1,8 +1,8 @@
-import { Animal } from "./animal";
-import { ClimbTree } from "./ClimbTrees";
-import { EmitSound } from "./emitSound";
+import { Animal } from "./Animal";
+import { ClimbTree } from "./IClimbTrees";
+import { EmitSound } from "./IEmitSound";
 
-class Laziness extends Animal implements ClimbTree, EmitSound {
+export class Laziness extends Animal implements ClimbTree, EmitSound {
 
     constructor(name: string, age: number) {
         super(name, age);
